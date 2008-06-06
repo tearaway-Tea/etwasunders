@@ -2,15 +2,14 @@
 <MP3PlayerControlBase 
 	xmlns="com.etwasunders.controls.*" 
 	xmlns:mx="http://www.adobe.com/2006/mxml"
-	horizontalGap="0"
+	xmlns:skins="com.etwasunders.skins.*"
+	verticalGap="0"
+	horizontalAlign="right"
 	paddingRight="3"
-	verticalAlign="middle"
 	creationComplete="onCreationComplete()">
-		<mx:Text
-			id="statusLabel"
-			styleName="StuffText"
-			paddingTop="-2"
-			alpha="0.3" />
+	<mx:HBox
+		verticalAlign="middle"
+		horizontalGap="0">
         <mx:Label 
         	styleName="WhiteText"
         	text="{mp3Player.sPosition}"
@@ -35,4 +34,10 @@
         	styleName="PlayerButton"
         	width="13"
         	click="onNextClick()" />
+	</mx:HBox>
+	<skins:DelimiterSkin />
+	<mx:Text
+		id="statusLabel"
+		styleName="StuffText"
+		alpha="0.3" />
 </MP3PlayerControlBase>

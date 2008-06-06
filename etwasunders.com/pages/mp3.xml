@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0"?>
 <mp3>
-	<list>
+	<list caption="Album">
+		<track filename="mp3/Etwas_Unders_-_01.mp3" title="Track 01" info="6.40 mb, 192 kbps, 4:40" />
+		<track filename="mp3/Etwas_Unders_-_02.mp3" title="Track 02" info="6.40 mb, 192 kbps, 4:40" />
+		<track filename="mp3/Etwas_Unders_-_03.mp3" title="Track 03" info="6.40 mb, 192 kbps, 4:40" />
+		<track filename="mp3/Etwas_Unders_-_04.mp3" title="Track 04" info="6.40 mb, 192 kbps, 4:40" />
+	</list>
+	<list caption="Demo">
 		<track filename="mp3/Etwas_Unders_-_Vzaemoobmin.mp3" title="Взаємообмін" info="6.40 mb, 192 kbps, 4:40" />
 		<track filename="mp3/Etwas_Unders_-_Amneziya.mp3" title="Амнезія" info="3.40 mb, 128 kbps, 3:43" />
 		<track filename="mp3/Etwas_Unders_-_Yty.mp3" title="Йти" info="3.23 mb, 128 kbps, 3:31" />

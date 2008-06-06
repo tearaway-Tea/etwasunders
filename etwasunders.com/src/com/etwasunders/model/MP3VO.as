@@ -3,6 +3,22 @@ package com.etwasunders.model {
 	[RemoteClass(alias="com.etwasunders.model.MP3VO")]
 	public class MP3VO {
 		
+		public static const ALBUM : String = "album";
+		
+		public static const DEMO : String = "demo";
+		
+		[Bindable]
+		public var index : Number;
+		
+		[Bindable]
+		public function set type(value  : String) : void {
+			_type = value;
+		}
+		
+		public function get type() : String {
+			return _type;
+		}
+		
 		[Bindable]
 		public function set filename(value  : String) : void {
 			_filename = value;
@@ -28,7 +44,9 @@ package com.etwasunders.model {
 		
 		public function get info() : String {
 			return _info;
-		}						
+		}
+		
+		private var _type : String;						
 		
 		private var _filename : String;
 		

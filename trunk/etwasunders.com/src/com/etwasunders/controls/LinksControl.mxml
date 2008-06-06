@@ -7,13 +7,14 @@
 	height="100%"
 	styleName="ContentBox"
 	label="Links"
-	direction="horizontal"
+	direction="vertical"
 	verticalScrollPolicy="off"
 	creationComplete="onCreationComplete()"
 	resize="onResize()">
 	<mx:VBox
 		id="bandsVBox"
-		width="40%">
+		width="40%"
+		resize="onResize()">
 		<mx:Label
 			styleName="Text"
 			text="Bands:" 
@@ -37,7 +38,8 @@
 		</mx:Repeater>
 	</mx:VBox>
 	<mx:VBox
-		id="portalsVBox">
+		id="portalsVBox"
+		resize="onResize()">
 		<mx:Label
 			styleName="Text"
 			text="Portals:"

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinksControlBase 
+	xmlns="com.etwasunders.controls.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:controls="org.goverla.controls.*" 
+	width="100%" 
+	height="100%"
+	styleName="ContentBox"
+	label="Links"
+	direction="horizontal"
+	verticalScrollPolicy="off"
+	creationComplete="onCreationComplete()"
+	resize="onResize()">
+	<mx:VBox
+		id="bandsVBox"
+		width="40%">
+		<mx:Label
+			styleName="Text"
+			text="Bands:" 
+			paddingBottom="6" />
+		<mx:Image
+			source="{ENTRIES_DELIMITER}" 
+			alpha="0.3"
+			width="232"
+			height="1" />
+		<mx:Spacer
+			height="2" />
+		<mx:Repeater
+			id="bandsRepeater">
+			<mx:HBox>
+				<mx:Text
+					text="{bandsRepeater.currentItem.@title}" />
+				<controls:HyperLinkButton
+					label="{bandsRepeater.currentItem.@url}"
+					url="{bandsRepeater.currentItem.@url}" />
+			</mx:HBox>
+		</mx:Repeater>
+	</mx:VBox>
+	<mx:VBox
+		id="portalsVBox">
+		<mx:Label
+			styleName="Text"
+			text="Portals:"
+			paddingBottom="6" />
+		<mx:Image
+			source="{ENTRIES_DELIMITER}" 
+			alpha="0.3"
+			width="232"
+			height="1" />
+		<mx:Spacer
+			height="2" />
+		<mx:Repeater
+			id="portalsRepeater">
+			<mx:HBox>
+				<mx:Text
+					text="{portalsRepeater.currentItem.@title}" />
+				<controls:HyperLinkButton
+					label="{portalsRepeater.currentItem.@url}"
+					url="{portalsRepeater.currentItem.@url}" />
+			</mx:HBox>
+		</mx:Repeater>
+	</mx:VBox>
+</LinksControlBase>

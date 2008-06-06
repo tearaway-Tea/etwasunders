@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentMenuBase 
+	xmlns="com.etwasunders.controls.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:skins="com.etwasunders.skins.*"
+	horizontalAlign="right"
+	verticalGap="0"
+	height="100%">
+	<mx:LinkBar
+		id="menuLinkBar"
+		width="135"
+		styleName="MenuBar"
+		dataProvider="{dataProvider}"
+		direction="vertical"
+		verticalGap="4"
+		separatorSkin="com.etwasunders.skins.DelimiterSkin"
+		updateComplete="onMenuUpdateComplete()" />
+	<mx:Spacer
+		height="25%" />
+	<MP3PlayerControl />
+	<mx:Box
+		paddingRight="4">
+		<skins:DelimiterSkin />
+	</mx:Box>
+	<mx:HBox
+		width="100%"
+		paddingTop="2"
+		paddingRight="3"
+		horizontalGap="0"
+		visible="false"
+		horizontalAlign="right">
+		<mx:Label text="EN"
+			styleName="RedText"
+			buttonMode="true"
+			mouseChildren="false" />
+		<mx:Label text="|"
+			styleName="RedText"
+			width="9" />
+		<mx:Label text="UA"
+			styleName="RedText"
+			buttonMode="true"
+			mouseChildren="false" />
+		<mx:Label text="|"
+			styleName="RedText"
+			width="9" />
+		<mx:Label text="RU"
+			styleName="RedText"
+			buttonMode="true"
+			mouseChildren="false" />
+	</mx:HBox>
+</ContentMenuBase>

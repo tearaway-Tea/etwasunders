@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AboutControlBase
+	xmlns="com.etwasunders.controls.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="100%" 
+	height="100%"
+	styleName="ContentBox"
+	label="About"
+	verticalScrollPolicy="off"
+	creationComplete="onCreationComplete()">
+	<mx:Text
+		id="aboutText"
+		width="100%" />
+</AboutControlBase>

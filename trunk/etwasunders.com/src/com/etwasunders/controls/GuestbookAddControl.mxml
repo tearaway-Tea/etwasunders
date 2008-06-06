@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GuestbookAddControlBase 
+	xmlns="com.etwasunders.controls.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	title="Add Comment"
+	showCloseButton="true"
+	draggable="true"
+	close="onCancel(event)">
+	
+	<mx:Validator
+		id="nameValidator"
+		source="{nameTextInput}"
+		property="text"
+		required="true" />
+		
+	<mx:Validator
+		id="commentValidator"
+		source="{commentTextArea}"
+		property="text"
+		required="true" />
+	
+	<mx:Form>
+		<mx:FormItem
+			label="Name:"
+			required="true">
+			<mx:TextInput
+				id="nameTextInput"
+				width="230" />
+		</mx:FormItem>
+		<mx:FormItem
+			label="Email or Site:">
+			<mx:TextInput
+				id="emailTextInput"
+				width="230" />
+		</mx:FormItem>
+		<mx:FormItem
+			label="Comment:"
+			required="true">
+			<mx:TextArea
+				id="commentTextArea"
+				width="230"
+				height="150" />
+		</mx:FormItem>
+		<mx:FormItem>
+			<mx:Button
+				label="OK"
+				click="onOk(event)" />
+		</mx:FormItem>
+	</mx:Form>
+</GuestbookAddControlBase>

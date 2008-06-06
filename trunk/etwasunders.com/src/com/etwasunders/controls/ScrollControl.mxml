@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	height="100%">
+	<mx:Box
+		paddingTop="12"
+		paddingBottom="12"
+		height="100%">
+		<mx:Canvas
+			verticalCenter="0"
+			verticalScrollPolicy="off"
+			height="100%">
+			<mx:Image
+				source="{Images.TRACK}"
+				alpha="0.4" />	
+		</mx:Canvas>			
+	</mx:Box>
+	<mx:VScrollBar
+		id="scrollBar"
+		height="100%"
+		trackSkin="com.etwasunders.skins.ScrollTrackSkin"
+		scroll="{dispatchEvent(new ScrollEvent(ScrollEvent.SCROLL))}" />	
+	<mx:Script>
+		<![CDATA[
+			import mx.events.ScrollEvent;
+			import com.etwasunders.constants.Images;
+		]]>
+	</mx:Script>
+</mx:Canvas>

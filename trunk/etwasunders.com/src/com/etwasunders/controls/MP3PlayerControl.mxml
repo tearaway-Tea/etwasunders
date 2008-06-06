@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MP3PlayerControlBase 
+	xmlns="com.etwasunders.controls.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	horizontalGap="0"
+	paddingRight="3"
+	verticalAlign="middle"
+	creationComplete="onCreationComplete()">
+		<mx:Text
+			id="statusLabel"
+			styleName="StuffText"
+			paddingTop="-2"
+			alpha="0.3" />
+        <mx:Label 
+        	styleName="WhiteText"
+        	text="{mp3Player.sPosition}"
+        	width="22" />
+        <mx:LinkButton
+        	icon="{PLAYER_PREV_TRACK}" 
+        	styleName="PlayerButton"
+        	width="13"
+        	click="onPrevClick()" />
+        <mx:LinkButton
+        	icon="{playPauseIcon}"
+        	styleName="PlayerButton"
+        	width="13"
+        	click="onPlayPauseClick()" />
+        <mx:LinkButton
+        	icon="{PLAYER_STOP}"
+        	styleName="PlayerButton"
+        	width="13"
+        	click="onStopClick()" />
+        <mx:LinkButton
+        	icon="{PLAYER_NEXT_TRACK}"
+        	styleName="PlayerButton"
+        	width="13"
+        	click="onNextClick()" />
+</MP3PlayerControlBase>

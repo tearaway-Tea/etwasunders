@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentBase 
+	xmlns="com.etwasunders.controls.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	width="100%"
+	height="100%"
+	creationComplete="onCreationComplete()">
+	<mx:VBox
+		width="30%"
+		height="100%"
+		horizontalAlign="right">
+		<ContentMenu
+			paddingTop="30"
+			dataProvider="{contentViewStack}" />
+		<Copyright />
+	</mx:VBox>
+	<mx:VBox
+		width="70%"
+		height="100%">
+		<mx:HBox
+			width="100%"
+			height="85%"
+			paddingLeft="50"
+			verticalAlign="middle">
+			<ScrollControl 
+				id="scrollControl" 
+				scroll="onScrollBarScroll()" />
+			<mx:ViewStack
+				id="contentViewStack"
+				width="100%"
+				height="85%"
+				paddingLeft="15"
+				change="onViewStackChange(event)">
+				<NewsControl 
+					creationComplete="onChildCreationComplete(event)" />
+				<AboutControl />
+				<MusicControl />
+				<GuestbookControl />
+				<LinksControl />
+			</mx:ViewStack>
+		</mx:HBox>
+		<mx:Spacer
+			height="15%" />
+	</mx:VBox>
+</ContentBase>

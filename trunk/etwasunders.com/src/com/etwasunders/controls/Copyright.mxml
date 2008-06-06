@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:controls="org.goverla.controls.*" 
+	verticalGap="4"
+	horizontalAlign="right"
+	paddingRight="3">
+	<mx:HBox
+		horizontalGap="0"
+		verticalAlign="middle"
+		paddingBottom="-10">
+		<mx:Label
+			styleName="Text"
+			text="Etwas Unders" />
+		<mx:Label
+			styleName="RedText"
+			text="©"
+			width="10" />
+		<mx:Label
+			styleName="Text"
+			text="Developed by" />
+		<controls:HyperLinkButton
+			label="tearaway_Tea"
+			url="http://tearaway-tea.com/"
+			width="64" />
+	</mx:HBox>
+	<mx:HBox
+		verticalAlign="middle"
+		horizontalGap="0">
+		<mx:Image
+			source="{Images.COPYRIGHT}"
+			width="59"
+			height="5"
+			alpha="0.3" />
+		<mx:Label
+			styleName="Text"
+			text="Designed by"
+			paddingLeft="2" />
+		<controls:HyperLinkButton
+			label="ALES MARDALETTO"
+			url="http://alesmardaletto.livejournal.com/" 
+			width="74" />
+		<mx:Label
+			styleName="Text"
+			text="©" 
+			width="11" />
+	</mx:HBox>
+	<mx:Script>
+		<![CDATA[
+			import com.etwasunders.constants.Images;
+		]]>
+	</mx:Script>
+</mx:VBox>

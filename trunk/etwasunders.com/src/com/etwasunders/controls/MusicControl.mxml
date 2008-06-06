@@ -6,25 +6,59 @@
 	height="100%"
 	styleName="ContentBox"
 	label="Music"
-	verticalScrollPolicy="off">
-	<mx:Label
-		styleName="Text"
-		text="Demo:" 
-		paddingBottom="6" />
-	<mx:Image
-		source="{ENTRIES_DELIMITER}" 
-		alpha="0.3"
-		width="232"
-		height="1" />
-	<mx:Spacer
-		height="2" />
-	<mx:Repeater
-		id="mp3Repeater"
-		width="100%"
-		dataProvider="{musicModelLocator.nowPlayingList}">
-		<MusicEntryView
-			entryIndex="{mp3Repeater.currentIndex}"
-			entry="{mp3Repeater.currentItem}"
-			showDelimiter="{mp3Repeater.currentIndex + 1 != musicModelLocator.nowPlayingList.length}" />
-	</mx:Repeater>
+	direction="vertical"
+	verticalScrollPolicy="off"
+	resize="onResize()"
+	creationComplete="onCreationComplete()">
+	<mx:Script>
+		<![CDATA[
+			import com.etwasunders.model.MP3VO;
+		]]>
+	</mx:Script>
+	<mx:VBox
+		id="albumVBox"
+		resize="onResize()">
+		<mx:Label
+			styleName="Text"
+			text="Album (2007):" 
+			paddingBottom="5" />
+		<mx:Image
+			source="{ENTRIES_DELIMITER}" 
+			alpha="0.3"
+			width="232"
+			height="1" />
+		<mx:Spacer
+			height="2" />
+		<mx:Repeater
+			id="albumRepeater"
+			width="100%">
+			<MusicEntryView
+				entryIndex="{albumRepeater.currentIndex}"
+				entry="{albumRepeater.currentItem}"
+				showDelimiter="{albumRepeater.currentIndex + 1 != musicModelLocator.nowPlayingList.length}" />
+		</mx:Repeater>
+	</mx:VBox>
+	<mx:VBox
+		id="demoVBox"
+		resize="onResize()">
+		<mx:Label
+			styleName="Text"
+			text="Demo (2004 - 2006):" 
+			paddingBottom="5" />
+		<mx:Image
+			source="{ENTRIES_DELIMITER}" 
+			alpha="0.3"
+			width="232"
+			height="1" />
+		<mx:Spacer
+			height="2" />
+		<mx:Repeater
+			id="demoRepeater"
+			width="100%">
+			<MusicEntryView
+				entryIndex="{MP3VO(demoRepeater.currentItem).index}"
+				entry="{demoRepeater.currentItem}"
+				showDelimiter="{demoRepeater.currentIndex + 1 != musicModelLocator.nowPlayingList.length}" />
+		</mx:Repeater>
+	</mx:VBox>
 </MusicControlBase>

@@ -13,12 +13,11 @@
 	resize="onResize()">
 	<mx:VBox
 		id="bandsVBox"
-		width="40%"
 		resize="onResize()">
 		<mx:Label
 			styleName="Text"
 			text="Bands:" 
-			paddingBottom="6" />
+			paddingBottom="5" />
 		<mx:Image
 			source="{ENTRIES_DELIMITER}" 
 			alpha="0.3"
@@ -43,7 +42,7 @@
 		<mx:Label
 			styleName="Text"
 			text="Portals:"
-			paddingBottom="6" />
+			paddingBottom="5" />
 		<mx:Image
 			source="{ENTRIES_DELIMITER}" 
 			alpha="0.3"

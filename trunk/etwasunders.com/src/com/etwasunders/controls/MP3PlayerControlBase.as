@@ -9,7 +9,7 @@ package com.etwasunders.controls {
 	import flash.system.Security;
 	
 	import mx.collections.ArrayCollection;
-	import mx.containers.HBox;
+	import mx.containers.VBox;
 	import mx.controls.Label;
 	
 	import nl.fxc.controls.MP3Player;
@@ -17,7 +17,7 @@ package com.etwasunders.controls {
 	
 	import org.goverla.managers.ApplicationManager;
 
-	public class MP3PlayerControlBase extends HBox {
+	public class MP3PlayerControlBase extends VBox {
 		
         protected static const PLAYER_NEXT_TRACK : Class = Images.PLAYER_NEXT_TRACK;
         
@@ -86,17 +86,23 @@ package com.etwasunders.controls {
 		private function onLoadComplete(event : Event) : void {
 			MusicModelLocator.getInstance().nowPlayingList = new ArrayCollection()
 			var xml : XML = new XML(loader.data);
-			for each (var track : XML in xml.list.track) {
+			fillPlayingList(xml.list.(@caption=="Album").track, MP3VO.ALBUM);
+			fillPlayingList(xml.list.(@caption=="Demo").track, MP3VO.DEMO);
+		}
+		
+		private function onChange(event : Event) : void {
+			dispatchEvent(new Event("playPauseClick"));
+		}
+		
+		private function fillPlayingList(list : XMLList, type : String) : void {
+			for each (var track : XML in list) {
 				var mp3Entry : MP3VO = new MP3VO();
+				mp3Entry.type = type;
 				mp3Entry.filename = ApplicationManager.instance.url + String(track.@filename);
 				mp3Entry.title = String(track.@title);
 				mp3Entry.info = String(track.@info);
 				MusicModelLocator.getInstance().nowPlayingList.addItem(mp3Entry);
 			}
-		}
-		
-		private function onChange(event : Event) : void {
-			dispatchEvent(new Event("playPauseClick"));
 		}
 		
 		private var _loader : URLLoader;

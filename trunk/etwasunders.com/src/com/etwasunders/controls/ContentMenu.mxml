@@ -2,7 +2,6 @@
 <ContentMenuBase 
 	xmlns="com.etwasunders.controls.*" 
 	xmlns:mx="http://www.adobe.com/2006/mxml"
-	xmlns:skins="com.etwasunders.skins.*"
 	horizontalAlign="right"
 	verticalGap="0"
 	height="100%">
@@ -18,10 +17,6 @@
 	<mx:Spacer
 		height="25%" />
 	<MP3PlayerControl />
-	<mx:Box
-		paddingRight="4">
-		<skins:DelimiterSkin />
-	</mx:Box>
 	<mx:HBox
 		width="100%"
 		paddingTop="2"

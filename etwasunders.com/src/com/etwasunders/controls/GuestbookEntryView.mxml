@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GuestbookEntryViewBase 
+	xmlns="com.etwasunders.controls.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:controls="org.goverla.controls.*" 
+	width="100%"
+	paddingBottom="12"
+	verticalGap="0">
+	<mx:Text
+		htmlText="{entryText}" 
+		width="100%"
+		paddingLeft="0"
+		paddingBottom="5" />
+	<mx:Image
+		source="{ENTRIES_DELIMITER}" 
+		alpha="0.3"
+		width="232"
+		height="1" />
+	<mx:HBox
+		paddingTop="3"
+		horizontalGap="0">
+		<mx:Text
+			styleName="Text"
+			text="{entry.date}" />
+		<mx:Label
+			styleName="RedText"
+			width="10"
+			text="|" />
+		<controls:HyperLinkButton
+			styleName="{entry.email == null || entry.email == '' ? 'LinkBlank' : 'CyrillicHyperLinkButton'}"
+			label="{entry.user}"
+			url="{entry.email}"
+			height="20" />
+	</mx:HBox>
+</GuestbookEntryViewBase>

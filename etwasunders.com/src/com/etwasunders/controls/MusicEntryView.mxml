@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicEntryViewBase 
+	xmlns="com.etwasunders.controls.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:controls="org.goverla.controls.*" 
+	width="100%">
+	<mx:HBox
+		paddingLeft="5"
+		verticalAlign="middle">
+        <controls:HyperLinkButton
+        	icon="{PLAYER_PLAY}"
+        	url="{entry.filename}"
+        	width="0"
+        	height="0"
+        	rotation="90" />
+		<mx:Label
+			text="{entry.title}"
+			styleName="RedCyrillicText"
+			mouseChildren="false"
+			buttonMode="true"
+			toolTip="click to listen"
+			click="onPlayClick()" />
+		<mx:Text
+			styleName="Text"
+			paddingTop="2"
+			text="{entry.info}" />
+	</mx:HBox>
+</MusicEntryViewBase>

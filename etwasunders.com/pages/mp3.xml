@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<mp3>
+	<list>
+		<track filename="mp3/Etwas_Unders_-_Vzaemoobmin.mp3" title="Взаємообмін" info="6.40 mb, 192 kbps, 4:40" />
+		<track filename="mp3/Etwas_Unders_-_Amneziya.mp3" title="Амнезія" info="3.40 mb, 128 kbps, 3:43" />
+		<track filename="mp3/Etwas_Unders_-_Yty.mp3" title="Йти" info="3.23 mb, 128 kbps, 3:31" />
+		<track filename="mp3/Etwas_Unders_-_Yangoly.mp3" title="Янголи" info="4.37 mb, VBR 3, 5:11" />
+		<track filename="mp3/Etwas_Unders_-_Komatoz.mp3" title="Коматоз" info="3.52 mb, VBR 3, 3:56" />
+		<track filename="mp3/Etwas_Unders_-_Vidkryta_Yasna_i_Pusta.mp3" title="Відкрита Ясна і Пуста" info="3.15 mb, VBR 3, 3:34" />
+		<track filename="mp3/Etwas_Unders_-_Sproba_(triac).mp3" title="Спроба" info="5.79 mb, VBR 3, 5:57" />
+	</list>
+</mp3>

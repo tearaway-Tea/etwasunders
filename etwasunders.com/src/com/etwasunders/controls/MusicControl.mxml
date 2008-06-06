@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MusicControlBase 
+	xmlns="com.etwasunders.controls.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	width="100%"
+	height="100%"
+	styleName="ContentBox"
+	label="Music"
+	verticalScrollPolicy="off">
+	<mx:Label
+		styleName="Text"
+		text="Demo:" 
+		paddingBottom="6" />
+	<mx:Image
+		source="{ENTRIES_DELIMITER}" 
+		alpha="0.3"
+		width="232"
+		height="1" />
+	<mx:Spacer
+		height="2" />
+	<mx:Repeater
+		id="mp3Repeater"
+		width="100%"
+		dataProvider="{musicModelLocator.nowPlayingList}">
+		<MusicEntryView
+			entryIndex="{mp3Repeater.currentIndex}"
+			entry="{mp3Repeater.currentItem}"
+			showDelimiter="{mp3Repeater.currentIndex + 1 != musicModelLocator.nowPlayingList.length}" />
+	</mx:Repeater>
+</MusicControlBase>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NewsControlBase 
+	xmlns="com.etwasunders.controls.*" 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:controls="org.goverla.controls.*" 
+	width="100%"
+	height="100%"
+	styleName="ContentBox"
+	label="News"
+	verticalGap="2"
+	creationComplete="onCreationComplete()">
+	<mx:VBox 
+		id="entriesVBox"
+		width="100%" 
+		height="100%" 
+		minHeight="0"
+		verticalScrollPolicy="off">
+		<mx:Repeater
+			id="entriesRepeater"
+			recycleChildren="true"
+			dataProvider="{dataProvider}"
+			width="100%">
+			<NewsEntryView
+				entry="{entriesRepeater.currentItem}" />
+		</mx:Repeater>
+	</mx:VBox>
+	<mx:HBox
+		paddingLeft="-3">
+		<controls:Pager
+			neighbourhood="2"
+			dataProvider="{dataProvider}"
+			pluralForm="news" 
+			itemsTotalTemplate="{ITEM_TOTAL_TEMPLATE}" />
+		<controls:HyperLinkButton
+			label="rss"
+			url="http://etwasunders.com/rss/news" />
+	</mx:HBox>
+</NewsControlBase>

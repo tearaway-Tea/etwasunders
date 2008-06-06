@@ -1,0 +1,238 @@
+Application {
+	backgroundColor: #000000;
+	backgroundGradientColors: #000000, #000000;
+}
+
+@font-face {
+	src: url("kr-08-55.ttf");
+	fontFamily: kroeger;
+}
+
+ToolTip {
+	backgroundAlpha: 0.75;
+	backgroundColor: #FFFFFF;
+	font-family: kroeger;
+	font-weight: normal;
+	font-size: 8;
+	fontAntiAliasType: normal;
+}
+
+VScrollBar {
+	up-arrow-up-skin: Embed("../resources/images/up.png");
+	up-arrow-down-skin: Embed("../resources/images/up.png");
+	up-arrow-over-skin: Embed("../resources/images/up.png");
+	up-arrow-disabled-skin: Embed("../resources/images/up.png");
+	down-arrow-disabled-skin: Embed("../resources/images/down.png");
+	down-arrow-down-skin: Embed("../resources/images/down.png");
+	down-arrow-over-skin: Embed("../resources/images/down.png");
+	down-arrow-up-skin: Embed("../resources/images/down.png");
+	thumb-up-skin: Embed("../resources/images/thumb.png");
+	thumb-down-skin: Embed("../resources/images/thumb.png");
+	thumb-disabled-skin: Embed("../resources/images/thumb.png");
+	thumb-over-skin: Embed("../resources/images/thumb.png");
+}
+
+TitleWindow {
+	borderAlpha: 0.7;
+	border-color: #351313;
+	borderThicknessLeft: 2;
+	borderThicknessTop: 0;
+	borderThicknessBottom: 2;
+	borderThicknessRight: 2;
+	cornerRadius: 0;
+	backgroundAlpha: 0.8;
+	background-color: #260E0E;
+	titleStyleName: "TitleText";
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	closeButtonDisabledSkin: Embed("../resources/images/close.png");
+	closeButtonDownSkin: Embed("../resources/images/close.png");
+	closeButtonOverSkin: Embed("../resources/images/close.png");
+	closeButtonUpSkin: Embed("../resources/images/close.png");
+}
+
+Pager {
+	color : #737475;
+	font-family: kroeger;
+	font-weight: normal;
+	font-size: 8;
+	fontAntiAliasType: normal;
+	items-total-color: #D5D5D5;
+}
+
+ExtendedLinkBar {
+	color: #971206;
+	disabled-color: #000000;
+	textSelectedColor: #971206;
+	textRollOverColor: #971206;
+	disabled-background-color: #971206;
+	disabled-background-alpha: 1;
+	separator-width: 1;
+	separator-color: #971206;
+	horizontal-gap: 0;
+	font-family: kroeger;
+	font-weight: normal;
+	font-size: 8;
+	fontAntiAliasType: normal;
+	corner-radius: 0;
+}
+
+FormItem {
+	color: #737475;
+	font-family: kroeger;
+	font-weight: normal;
+	font-size: 8;
+	fontAntiAliasType: normal;
+}
+
+Button {
+	color: #D5D5D5;
+	textSelectedColor: #D5D5D5;
+	textRollOverColor: #D5D5D5;
+	fillColors: #0F0102, #0F0102, #0F0102, #0F0102;
+	font-family: kroeger;
+	font-weight: normal;
+	font-size: 8;
+	fontAntiAliasType: normal;
+	theme-color: #971206;
+	corner-radius: 0;
+	focus-alpha: 1;
+}
+
+TextInput {
+	color: #1B0605;
+	background-alpha: 0.85;
+	font-family: Verdana, Arial;
+	font-size: 10;
+	theme-color: #971206;
+}
+
+TextArea {
+	color: #1B0605;
+	background-alpha: 0.85;
+	font-family: Verdana, Arial;
+	font-size: 10;
+	theme-color: #971206;
+}
+
+.TitleText {
+	color: #737475;
+	font-family: kroeger;
+	font-weight: normal;
+	font-size: 8;
+	fontAntiAliasType: normal;
+}
+
+.Text {
+	color: #737475;
+	font-family: kroeger;
+	font-weight: normal;
+	font-size: 8;
+	fontAntiAliasType: normal;
+}
+
+.WhiteText {
+	color: #D5D5D5;
+	textSelectedColor: #737475;
+	textRollOverColor: #C4C4C4;
+	font-family: kroeger;
+	font-weight: normal;
+	font-size: 8;
+	fontAntiAliasType: normal;
+}
+
+.RedText {
+	color: #971206;
+	font-family: kroeger;
+	font-weight: normal;
+	font-size: 8;
+	fontAntiAliasType: normal;
+}
+
+.RedCyrillicText {
+	color: #971206;
+	font-family: Verdana, Arial;
+	font-size: 10;
+}
+
+.StuffText {
+	color: #3C3C3D;
+	font-family: Verdana, Arial;
+	font-size: 10;
+}
+
+.ContentBox {
+	color: #C4C4C4;
+	font-family: Verdana, Arial;
+	font-size: 10;
+}
+
+HyperLinkButton {
+	color: #971206;
+	textSelectedColor: #500B04;
+	textRollOverColor: #500B04;
+	font-family: kroeger;
+	font-weight: normal;
+	font-size: 8;
+	fontAntiAliasType: normal;
+	text-decoration: underline;
+	padding-top: 0;
+	padding-right: -2;
+	padding-bottom: 0;
+	padding-left: -2;
+}
+
+.CyrillicHyperLinkButton {
+	color: #971206;
+	textSelectedColor: #500B04;
+	textRollOverColor: #500B04;
+	font-family: Verdana, Arial;
+	font-size: 10;
+	text-decoration: underline;
+	padding-top: -7;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: -2;
+}
+
+.LinkBlank {
+	color: #C4C4C4;
+	textSelectedColor: #C4C4C4;
+	textRollOverColor: #C4C4C4;
+	font-family: Verdana, Arial;
+	font-size: 10;
+	text-decoration: none;
+	padding-top: -7;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: -2;
+}
+
+.MenuBar {
+	color: #D5D5D5;
+	disabledColor: #737475;
+	textSelectedColor: #737475;
+	textRollOverColor: #C4C4C4;
+	linkButtonStyleName: "MenuBarLink";
+}
+
+.MenuBarLink {
+	rollOverColor: #000000;
+	textAlign: right;
+	font-family: kroeger;
+	font-weight: normal;
+	font-size: 8;
+	fontAntiAliasType: normal;
+	padding-right: 2px;
+}
+
+.PlayerButton {
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	over-skin: Embed("../resources/images/blank.png");
+	down-skin: Embed("../resources/images/blank.png");
+}

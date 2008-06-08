@@ -1,13 +1,20 @@
 ﻿<?xml version="1.0"?>
 <mp3>
 	<list caption="Album">
-		<track filename="mp3/Etwas_Unders_-_01.mp3" title="Track 01" info="6.40 mb, 192 kbps, 4:40" />
-		<track filename="mp3/Etwas_Unders_-_02.mp3" title="Track 02" info="6.40 mb, 192 kbps, 4:40" />
-		<track filename="mp3/Etwas_Unders_-_03.mp3" title="Track 03" info="6.40 mb, 192 kbps, 4:40" />
-		<track filename="mp3/Etwas_Unders_-_04.mp3" title="Track 04" info="6.40 mb, 192 kbps, 4:40" />
+		<track filename="mp3/album/Etwas_Unders_01_Komatoz.mp3" title="Коматоз" info="10.3 mb, VBR HQ, 5:26" />
+		<track filename="mp3/album/Etwas_Unders_02_Yangoly.mp3" title="Янголи" info="8.0 mb, VBR HQ, 4:14" />
+		<track filename="mp3/album/Etwas_Unders_03_Amnezia.mp3" title="Амнезія" info="7.5 mb, VBR HQ, 3:58" />
+		<track filename="mp3/album/Etwas_Unders_04_Vidkryta_Yasna_i_Pusta.mp3" title="Відкрита Ясна і Пуста" info="6.9 mb, VBR HQ, 3:37" />
+		<track filename="mp3/album/Etwas_Unders_05_Spokuta.mp3" title="Спокута" info="4.2 mb, VBR HQ, 2:12" />
+		<track filename="mp3/album/Etwas_Unders_06_Sumnivy_Dumky.mp3" title="Сумніви Думки" info="8.2 mb, VBR HQ, 4:23" />
+		<track filename="mp3/album/Etwas_Unders_07_Sproba.mp3" title="Спроба" info="9.5 mb, VBR HQ, 5:00" />
+		<track filename="mp3/album/Etwas_Unders_08_Vidstan'.mp3" title="Відстань" info="4.8 mb, VBR HQ, 2:30" />
+		<track filename="mp3/album/Etwas_Unders_09_Final_Mojih_Bozhevil'.mp3" title="Фінал Моїх Божевіль" info="5.4 mb, VBR HQ, 2:50" />
+		<track filename="mp3/album/Etwas_Unders_10_Otruta.mp3" title="Отрута" info="6.5 mb, VBR HQ, 3:25" />
+		<track filename="mp3/album/Etwas_Unders_11_Hvora.mp3" title="Хвора" info="7.2 mb, VBR HQ, 3:46" />
+		<track filename="mp3/album/Etwas_Unders_12_Vzaemoobmin.mp3" title="Взаємообмін" info="8.8 mb, VBR HQ, 4:41" />
 	</list>
 	<list caption="Demo">
-		<track filename="mp3/Etwas_Unders_-_Vzaemoobmin.mp3" title="Взаємообмін" info="6.40 mb, 192 kbps, 4:40" />
 		<track filename="mp3/Etwas_Unders_-_Amneziya.mp3" title="Амнезія" info="3.40 mb, 128 kbps, 3:43" />
 		<track filename="mp3/Etwas_Unders_-_Yty.mp3" title="Йти" info="3.23 mb, 128 kbps, 3:31" />
 		<track filename="mp3/Etwas_Unders_-_Yangoly.mp3" title="Янголи" info="4.37 mb, VBR 3, 5:11" />

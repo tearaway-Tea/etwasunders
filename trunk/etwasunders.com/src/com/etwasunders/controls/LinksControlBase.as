@@ -10,6 +10,7 @@ package com.etwasunders.controls {
 	import mx.containers.BoxDirection;
 	import mx.containers.VBox;
 	import mx.core.Repeater;
+	import mx.managers.CursorManager;
 	
 	import org.goverla.managers.ApplicationManager;
 
@@ -36,6 +37,7 @@ package com.etwasunders.controls {
 		}
 		
 		protected function onCreationComplete() : void {
+			CursorManager.setBusyCursor();
 			var request : URLRequest = new URLRequest(ApplicationManager.instance.url + "pages/links.xml");
 			loader.load(request);
 		}
@@ -49,6 +51,7 @@ package com.etwasunders.controls {
 		}
 		
 		private function onLoadComplete(event : Event) : void {
+			CursorManager.removeBusyCursor();
 			var xml : XML = new XML(loader.data);
 			var bands : XMLList = xml.list.(@caption=="Bands");
 			var portals : XMLList = xml.list.(@caption=="Portals");

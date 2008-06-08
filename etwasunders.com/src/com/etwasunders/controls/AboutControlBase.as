@@ -6,6 +6,7 @@ package com.etwasunders.controls {
 	
 	import mx.containers.VBox;
 	import mx.controls.Text;
+	import mx.managers.CursorManager;
 	
 	import org.goverla.managers.ApplicationManager;
 	import org.goverla.utils.TextFormatter;
@@ -23,11 +24,13 @@ package com.etwasunders.controls {
 		}
 		
 		protected function onCreationComplete() : void {
+			CursorManager.setBusyCursor();
 			var request : URLRequest = new URLRequest(ApplicationManager.instance.url + "pages/about.xml");
 			loader.load(request);
 		}
 		
 		private function onLoadComplete(event : Event) : void {
+			CursorManager.removeBusyCursor();
 			var xml : XML = new XML(loader.data);
 			aboutText.htmlText = TextFormatter.compressCRLF(xml.text);
 		}

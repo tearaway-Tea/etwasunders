@@ -11,6 +11,7 @@ package com.etwasunders.controls {
 	import mx.collections.ArrayCollection;
 	import mx.containers.VBox;
 	import mx.controls.Label;
+	import mx.managers.CursorManager;
 	
 	import nl.fxc.controls.MP3Player;
 	import nl.fxc.controls.MusicModelLocator;
@@ -54,6 +55,7 @@ package com.etwasunders.controls {
 		protected function onCreationComplete() : void {
 			Security.loadPolicyFile(ApplicationManager.instance.url + "crossdomain.xml");
 			mp3Player.addEventListener(Event.CHANGE, onChange);
+			CursorManager.setBusyCursor();
 			var request : URLRequest = new URLRequest(ApplicationManager.instance.url + "pages/mp3.xml");
 			loader.load(request);
 			mp3Player.lblMsg = statusLabel;
@@ -84,6 +86,7 @@ package com.etwasunders.controls {
 		}
 		
 		private function onLoadComplete(event : Event) : void {
+			CursorManager.removeBusyCursor();
 			MusicModelLocator.getInstance().nowPlayingList = new ArrayCollection()
 			var xml : XML = new XML(loader.data);
 			fillPlayingList(xml.list.(@caption=="Album").track, MP3VO.ALBUM);

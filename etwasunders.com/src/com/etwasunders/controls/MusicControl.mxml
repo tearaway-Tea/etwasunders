@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MusicControlBase 
 	xmlns="com.etwasunders.controls.*" 
-	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	xmlns:controls="org.goverla.controls.*" 
 	width="100%"
 	height="100%"
 	styleName="ContentBox"
@@ -18,10 +19,15 @@
 	<mx:VBox
 		id="albumVBox"
 		resize="onResize()">
-		<mx:Label
-			styleName="Text"
-			text="Album (2007):" 
-			paddingBottom="5" />
+		<mx:HBox>
+			<mx:Label
+				styleName="Text"
+				text="Album (2007)" 
+				paddingBottom="5" />
+			<controls:HyperLinkButton
+				label="[download all - zip]"
+				url="mp3/album/Etwas_Unders_(2007)_Etwas_Unders.zip" />
+		</mx:HBox>
 		<mx:Image
 			source="{ENTRIES_DELIMITER}" 
 			alpha="0.3"

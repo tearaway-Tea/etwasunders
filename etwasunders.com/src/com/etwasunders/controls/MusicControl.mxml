@@ -26,7 +26,7 @@
 				paddingBottom="5" />
 			<controls:HyperLinkButton
 				label="[download all - zip]"
-				url="mp3/album/Etwas_Unders_(2007)_Etwas_Unders.zip" />
+				url="download.html" />
 		</mx:HBox>
 		<mx:Image
 			source="{ENTRIES_DELIMITER}" 

@@ -1,8 +1,8 @@
 <?php
 
-	require_once("classes/ServiceBase.php");
-	require_once("../model/NewsVO.php");
-	require_once("../../../org/goverla/utils/common/FramedListResult.php");
+	require_once(dirname(__FILE__) . "/classes/ServiceBase.php");
+	require_once(dirname(__FILE__) . "/../model/NewsVO.php");
+	require_once(dirname(__FILE__) . "/../../../org/goverla/utils/common/FramedListResult.php");
 	
 	class News extends ServiceBase {
 		

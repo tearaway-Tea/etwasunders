@@ -1,7 +1,7 @@
 <?php
 	require("../xml_writer_class.php");
 	require("../rss_writer_class.php");
-	require("../../amfphp/services/Guestbook.php");
+	require("../../amfphp/services/com/etwasunders/business/Guestbook.php");
 
 	$rss_writer_object = new rss_writer_class();
 	$rss_writer_object->specification = "2.0";

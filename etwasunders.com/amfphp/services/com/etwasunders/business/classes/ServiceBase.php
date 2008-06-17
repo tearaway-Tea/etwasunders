@@ -1,7 +1,7 @@
 <?php
 
-	require_once("../../../../../adodb_lite/adodb.inc.php");
-	require_once("../../../Settings.php");
+	require_once(dirname(__FILE__) . "/../../../../../../adodb_lite/adodb.inc.php");
+	require_once(dirname(__FILE__) . "/../../../../Settings.php");
 	
 	class ServiceBase {
 		
